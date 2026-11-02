@@ -1,0 +1,58 @@
+# Local agent and editor state
+.atl/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Python environments and caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local credentials
+.env
+.env.*
+!.env.example
+
+# Generated kernel and device-tree artifacts
+build/
+driver/*.o
+driver/*.ko
+driver/*.mod
+driver/*.mod.c
+driver/.*.cmd
+driver/.tmp_versions/
+driver/Module.symvers
+driver/modules.order
+driver/.*.d
+*.dtbo
+*.dtb
+
+# Runtime calibration, capture data and logs
+camera_web/calibration.json
+camera_web/calibration.tmp
+*.raw
+*.log
+*.tmp
+
+# Image captures and other image assets
+*.[jJ][pP][gG]
+*.[jJ][pP][eE][gG]
+*.[pP][nN][gG]
+*.[gG][iI][fF]
+*.[wW][eE][bB][pP]
+*.[bB][mM][pP]
+*.[tT][iI][fF]
+*.[tT][iI][fF][fF]
+*.[sS][vV][gG]
+*.[iI][cC][oO]
+*.[aA][vV][iI][fF]
+*.[hH][eE][iI][cC]

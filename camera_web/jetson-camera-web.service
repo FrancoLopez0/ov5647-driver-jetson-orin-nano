@@ -1,0 +1,19 @@
+[Unit]
+Description=OV5647 LAN streaming and calibration console
+After=network.target
+
+[Service]
+Type=simple
+User=@USER@
+SupplementaryGroups=video
+WorkingDirectory=@INSTALL_DIR@
+ExecStart=/usr/bin/python3 @INSTALL_DIR@/server.py --host 0.0.0.0 --port @PORT@
+Restart=on-failure
+RestartSec=5
+KillMode=control-group
+TimeoutStopSec=20
+NoNewPrivileges=true
+UMask=0027
+
+[Install]
+WantedBy=multi-user.target
